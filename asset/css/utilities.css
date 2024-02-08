@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 16px;
+    background: #fff;
+}
+:root{
+    --secondary-bg:#f3f3f3;
+    --blue-color:rgb(29, 100, 200);
+    --orange-color:rgb(216, 66, 40);
+    --yellow-color:rgb(198, 198, 35);
+    --dark-blue-color:rgb(4, 28, 61);
+    --light-yellow-color:rgb(234, 234, 89);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+section, header, footer{
+    padding: 1rem 7rem;
+    scroll-margin-top: 3rem;
+}
+header{
+    border-bottom: 0.5px solid rgba(178, 178, 178, 0.738);
+}
+ul{
+    list-style-type: none;
+}
+img{
+    width: 100%;
+}
+.card{
+    width: 250px;
+    text-align: center;
+    border: 1px solid #9b9b9baf;
+    box-shadow: -5px 5px 10px rgba(229, 229, 229, 0.723);
+    border-radius: 10px;
+    transition: 0.2s ease;
+    height: auto;
+}
+.card:hover{
+    box-shadow: none;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.btn{
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    box-shadow: -5px 5px 20px rgba(182, 182, 182, 0.794);
+    transition: 0.2s ease;
+    color: black;
+    background: #fff;
+    font-size: 1.1rem;
+}
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow: none;
+}
+.btn-dark{
+    background: black;
+    color: #fff;
+}
+.text-center{
+    text-align: center;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h5{
+    color: #222;
+    font-size: 1rem;
+}
+h4{
+    color: #222;
+    font-size: 1.5rem;
+}
+h3{
+    color: #222;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+h2{
+    color: #222;
+    font-size: 3rem;
+    margin: 0.5rem 0;
+}
+h1{
+    color: #222;
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+p{
+    margin: 1rem 0;
+}
+.grid{
+    display: grid;
+    gap: 1rem;
+}
+.flex{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.my-1{
+    margin: 1rem 0;
+}
+.my-2{
+    margin: 1.5rem 0;
+}
+.my-3{
+    margin: 2rem 0;
+}
+.my-4{
+    margin: 3rem 0;
+}
+.my-5{
+    margin: 4rem 0;
+}
+.py-1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.py-2{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.py-3{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.py-4{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.py-5{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+
+@media (max-width:900px){
+    section, header, footer{
+        padding: 1rem 3rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .card{
+        width: 200px;
+    }
+}
+@media (max-width:600px){
+    section, header, footer{
+        padding: 1rem 1rem;
+    }
+}
